@@ -40,6 +40,7 @@ function init() {
     },
     function ( xhr ) {
       document.querySelector('.loading').style.width = `${( xhr.loaded / xhr.total * 100 )}%`
+      document.querySelector('.loading').style.backgroundColor = `#06cf1d`
 	  },
     function (error) {
       console.error(error);
