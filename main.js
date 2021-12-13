@@ -38,7 +38,9 @@ function init() {
       obj.position.set(0, -500, -1000)
       scene.add(obj);
     },
-    undefined,
+    function ( xhr ) {
+		  console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+	  },
     function (error) {
       console.error(error);
     }
