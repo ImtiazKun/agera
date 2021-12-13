@@ -39,7 +39,7 @@ function init() {
       scene.add(obj);
     },
     function ( xhr ) {
-		  console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+      document.querySelector('.loading').style.width = `${( xhr.loaded / xhr.total * 100 )}%`
 	  },
     function (error) {
       console.error(error);

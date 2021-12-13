@@ -9,15 +9,25 @@
       body {
         margin: 0;
       }
-      
+
       .instruction {
         position: fixed;
         top: 1em;
         left: 1em;
       }
+
+      .loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: purple;
+        height: 4px;
+        width: 0%;
+      }
     </style>
   </head>
   <body>
+    <div class="loading"></div>
     <div class="instruction">
       <p>Hold and drag to change view</p>
     </div>
